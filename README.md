@@ -4,13 +4,22 @@
 
 ---
 
-## 目录
+`CV官方中文文档:`[OpenCV](http://www.woshicver.com/)
+
+---
+
+## 了解
 
 1. [OpenCV的安装](#安装)
 2. [熟悉和了解](#熟悉和了解)
 3. [绘图功能](#绘图)
 4. [基操](#基操)
 5. [运算](#运算)
+6. [颜色空间](#颜色空间)
+7. [图像几何变换](#图像几何变换)
+8. [边缘提取](#边缘提取)
+9. [图像滤波](#图像滤波)
+10. [定位车牌位置，图像处理](#定位车牌位置)
 
 ## OpenCV
 
@@ -62,4 +71,55 @@ pip3 install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple
 `Code`[ipynb](./Code/运算.ipynb)
 
 - 学习图像的几种算术运算，例如加法，减法，按位运算等
+- 图像融合cv.addWeighted()
+- 按位运算
 
+![img_2](./md/img_2.png)    
+![img_3](./md/img_3.png)
+
+### 颜色空间
+
+`Code`[ipynb](./Code/颜色空间.ipynb)
+
+- 将图像从一个色彩空间转换到另一个，像BGR↔灰色，BGR↔HSV等
+- 创建一个应用程序，以提取视频中的彩色对象
+
+![img_4](./md/img_4.png)
+
+### 图像几何变换
+
+`Code`[ipynb](./Code/图像几何变换.ipynb)
+
+- 学习将不同的几何变换应用到图像上，如平移、旋转、仿射变换等
+- 缩放
+
+![img_5](./md/img_5.png)
+
+### 图像平滑
+
+`Code`[ipynb](./Code/图像平滑.ipynb)
+
+```markdown
+blur = cv.GaussianBlur(img, (5, 5), 0) 高斯模糊
+```
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+### 边缘提取
+
+`Code`[ipynb](./CV-cv/1.ipynb)
+
+![img.png](./md/img_6.png)
+
+### 图像滤波
+
+`Code`[ipynb](./CV-cv/2.ipynb)
+
+![img_1](./md/img_7.png)
+
+### 定位车牌位置
+
+`Code`[test.py](./CV-cv/test.py)
+
+![img_8](./md/img_8.png)  
